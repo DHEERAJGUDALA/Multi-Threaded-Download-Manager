@@ -2,27 +2,33 @@ package com.downloadmanager;
 
 public class ThreadDemo {
     public static void main(String []args){
-        String name = Thread.currentThread().getName();
-        System.out.println("Main thread is: " + name);
+        System.out.println("Main thread:"+Thread.currentThread().getName());
+        System.out.println();
+        SimpleTask task1= new SimpleTask("Download-A");
+        SimpleTask task2= new SimpleTask("Download-B");
+        SimpleTask task3= new SimpleTask("Download-C");
 
-        // Thread 1
-        Thread t1 = new Thread(() -> {
-            System.out.println("Thread 1 is running on: " + Thread.currentThread().getName());
-        });
+        Thread thread1 = new Thread(task1);
+        Thread thread2 = new Thread(task2);
+        Thread thread3 = new Thread(task3);
 
-        // Thread 2
-        Thread t2 = new Thread(() -> {
-            System.out.println("Thread 2 is running on: " + Thread.currentThread().getName());
-        });
+        System.out.println("Starting all downloads");
+        long startTime = System.currentTimeMillis();
 
-        // Thread 3
-        Thread t3 = new Thread(() -> {
-            System.out.println("Thread 3 is running on: " + Thread.currentThread().getName());
-        });
+        thread1.start();
+        thread2.start();
+        thread3.start();
 
-        // You MUST start all of them!
-        t1.start();
-        t2.start();
-        t3.start();
+        try{
+            thread1.join();
+            thread2.join();
+            thread3.join();
+        }catch(InterruptedException e){
+            System.out.println("Main thread was interrupted!");
+        }
+        long endTime=System.currentTimeMillis();
+        System.out.println();
+        System.out.println("All downloads finished");
+        System.out.println("Total time: " + (endTime-startTime)+"ms");
     }
 }
