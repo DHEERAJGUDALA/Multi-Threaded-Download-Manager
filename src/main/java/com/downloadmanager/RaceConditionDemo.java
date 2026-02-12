@@ -37,11 +37,11 @@ public class RaceConditionDemo {
              }
              System.out.println("Expected: 1,000,000");
              System.out.println("Unsafe Counter"+unsafeCounter[0]);
-             System.out.println("Safe Counter:"+safeCounter);
+             System.out.println("Safe Counter:"+safeCounter.get());
              System.out.println();
 
-             if(unsafeCounter[0]!=100_000){
-                 System.out.println("Unsafe counter Lost"+(100_000-unsafeCounter[0])+"increments!");
+             if(unsafeCounter[0]!=1_000_000){
+                 System.out.println("Unsafe counter Lost"+(1_000_000-unsafeCounter[0])+"increments!");
                  System.out.println("This is a Race Conditon");
              }
              System.out.print("AtomicLong is correct!");
