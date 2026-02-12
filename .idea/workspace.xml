@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7edbb62c-f77f-4b9e-8a25-e992b76d8345" name="Changes" comment="&quot;Created RaceconditionDemo class&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/downloadmanager/DownloadStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/downloadmanager/DownloadTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/downloadmanager/VolatileDemo.java" afterDir="false" />
+    <list default="true" id="7edbb62c-f77f-4b9e-8a25-e992b76d8345" name="Changes" comment="&quot;&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/downloadmanager/ProgressTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/downloadmanager/RaceConditionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/downloadmanager/RaceConditionDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/downloadmanager/ThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/downloadmanager/ThreadDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="14" />
+    <option name="cachedIndexableFilesCount" value="15" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,33 +56,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.RaceConditionDemo.executor": "Run",
-    "Application.ThreadDemo.executor": "Run",
-    "Application.ThreadPoolDemo.executor": "Run",
-    "Application.VolatileDemo.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.RaceConditionDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadPoolDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VolatileDemo.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -103,7 +100,8 @@
       <updated>1770801964224</updated>
       <workItem from="1770801969415" duration="9695000" />
       <workItem from="1770816583273" duration="6013000" />
-      <workItem from="1770894960276" duration="4854000" />
+      <workItem from="1770894960276" duration="7493000" />
+      <workItem from="1770919520959" duration="2046000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Created ThreadDemo class&quot;">
       <option name="closed" value="true" />
@@ -137,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770809720586</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;Created DownloadTask class&quot;">
+      <option name="closed" value="true" />
+      <created>1770900056996</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770900056998</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;&quot;">
+      <option name="closed" value="true" />
+      <created>1770900096171</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770900096171</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +162,8 @@
     <MESSAGE value="&quot;Created SimpleTask class&quot;" />
     <MESSAGE value="&quot;Created ThreadPoolDemo class&quot;" />
     <MESSAGE value="&quot;Created RaceconditionDemo class&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Created RaceconditionDemo class&quot;" />
+    <MESSAGE value="&quot;Created DownloadTask class&quot;" />
+    <MESSAGE value="&quot;&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;&quot;" />
   </component>
 </project>
