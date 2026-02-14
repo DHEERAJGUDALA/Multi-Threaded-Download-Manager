@@ -2,7 +2,7 @@ package com.downloadmanager;
 
 import java.util.List;
 
-public class ProgressTracker {
+public class ProgressTracker implements Runnable {
     private final List<DownloadTask>tasks;
     private final long updateIntervalMs;
     public ProgressTracker(List<DownloadTask>tasks,long updateIntervalMs){
@@ -10,22 +10,22 @@ public class ProgressTracker {
         this.updateIntervalMs=updateIntervalMs;
     }
     @Override
-    public void run(){
-        while(!Thread.currentThread().isInterrupted()){
+    public void run() {
+        while (!Thread.currentThread().isInterrupted()) {
             printProgress();
-            if(allTasksFinished()){
+            if (allTasksFinished()) {
                 printProgress();
                 break;
             }
-            try{
+            try {
                 Thread.sleep(updateIntervalMs);
-            }catch(InterruptedException e){
+            } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;
             }
         }
         System.out.println("\n[ProgressTracker] Monitoring stopped.");
-
+    }
         private void printProgress(){
             System.out.println("\n--- Download Progress ---");
             for(DownloadTask task:tasks){
@@ -61,10 +61,9 @@ public class ProgressTracker {
         }
         private String formatSize(long bytes){
             if(bytes<0)return "???";
-            if(bytes <1024) return + " B";
+            if(bytes <1024) return bytes + " B";
             if(bytes<1024*1024)return String.format("%.1f KB",bytes/1024.0);
             if (bytes < 1024 * 1024 * 1024) return String.format("%.1f MB", bytes / (1024.0 * 1024));
             return String.format("%.1f GB", bytes / (1024.0 * 1024 * 1024));
         }
-    }
 }
